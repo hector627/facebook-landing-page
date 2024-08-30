@@ -1,0 +1,434 @@
+html {
+  box-sizing: border-box;
+}
+*,*:before,*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 12px;
+  color: #1c1e21;
+  line-height: 1.34;
+  background-color: #fff;
+}
+li{
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.main {
+  padding: 92px 0 132px 0;
+  min-height: 640px;
+  background-color: #f0f2f5;
+}
+.middle {
+  margin: auto;
+  width: 980px;
+}
+/* Start Section1 */
+.section1 {
+  display: flex;
+  flex-direction: column;
+  padding-right: 24px;
+  flex: 1 0 0px;
+  transition: padding-right .3s ease-in-out;
+}
+.middle-main{
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+  padding: 8px 0 16px 0;
+}
+.logo__img{
+  height: 70px;
+  margin: -20px;
+}
+.title__h2 {
+  font-weight: 100;
+  font-size: 36px;
+  color: #333;
+}
+.title__p {
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  color: #606770;
+}
+
+.accounts {
+  display: flex;
+  flex-wrap: wrap;
+}
+.accounts .content-account:last-child {
+  margin-bottom: 20px;
+}
+.content-account {
+  position: relative;
+  flex: 0 0 178px;
+}
+.account {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  border-radius: 5%;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 1px #dddfe2;
+  transition: 0.2s ease-out;
+}
+.account:hover {
+  border-radius: 5%;
+  box-shadow: 5px 5px 10px #dcdcdc, -5px -5px 10px #e4e4e4;
+}
+.account-content-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px; height: 160px;
+  border-top-left-radius: 6%;
+  border-top-right-radius: 6%;
+  background-color: #f5f6f7;
+}
+.account-top__img--with-image {
+  width: 160px; height: 160px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  object-fit: cover;
+}
+
+.account-top-with-no-image {
+  background-image: url(../img/plus_icon.svg);  
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 48px; height: 48px;
+}
+.account-content-bottom{
+  padding: 14px;
+  text-align: center;
+}
+.account-bottom__h4 {
+  font-size: 18px;
+  font-weight: 100;
+  color: #4b4f56;
+  line-height: 1.1;
+  white-space: wrap;
+}
+.account-bottom__h4--add {
+  color: #0866ff;
+}
+.account-button-delete, .account__span--notificacions {
+  position: absolute;
+}
+.account-button-delete {
+  width: 16px; height: 16px;
+  top: 4px;
+  left: 4px;
+  border-radius: 16px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: transform .1s cubic-bezier(.08, .52, .52, 1);
+}
+.account-button-delete::before,
+.account-button-delete::after {
+  content: "";
+  position: absolute;
+  width: 2px; height: 12px;
+  top: 2px;
+  left: 7px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+.account-button-delete::before {
+  transform: rotate(45deg);
+}
+.account-button-delete::after {
+  transform: rotate(-45deg);
+}
+.content-account:hover .account-button-delete {
+  background-color: #ffffff;
+  transform: scale(1.4);
+  transform-origin: bottom right;
+  box-shadow: 1px 1px 2px 0 rgb(0, 0, 0, .3);
+}
+.content-account:hover .account-button-delete::before,
+.content-account:hover .account-button-delete::after {
+  background-color: #797878;
+}
+.account__span--notificacions {
+  top: -4px;
+  right: 14px;
+  width: 25px;
+  border-radius: 24px;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
+  cursor: default;
+  user-select: none;
+  background-color: #fa3e3e;
+  background-clip: padding-box;
+  box-shadow: -1px 1px 2px 0 rgb(0, 0, 0, .3);
+}
+/* End Section1 */
+/* Start Section2 */
+.section2 {
+  width: 396px; height: 496px;
+  transition: height .3s ease-in-out;
+}
+.section2-form-container {
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 0 24px;
+  margin: 40px 0 0;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgb(0, 0, 0, .1), 0 8px 16px rgb(0, 0, 0, .1);
+}
+
+.form-input-container{
+  display: inline-block;
+  width: 364px;
+  padding: 6px 0 2px 0;
+}
+.form-input-container:last-child{
+  padding-bottom: 6px;
+}
+.form-content-input {
+  display: inline-block;
+  background: #fff url(../img/px.png) repeat-x;
+  width: 100%;
+  font-size: 17px;
+  border-radius: 6px;
+  padding: 14px 16px;
+  border: 1px solid #dddfe2;
+}
+.form__input {
+  font-size: inherit;
+  float: left;
+  height: 22px;
+  line-height: 16px;
+  width: 334px;
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+}
+.form__input::placeholder {
+  color: #929497;
+}
+.form__input:focus  {
+  outline: none;
+  caret-color: #0866ff;
+}
+.form__input:focus::placeholder {
+  color: #dddfe2;
+} 
+.form-content-input:has(.form__input:focus)  {
+  border-color: #0866ff;
+  box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.form-content-login-button {
+  padding: 6px 0 0;
+}
+.buttons-landing-page {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 16px;
+  border: none;
+  border-radius: 6px;
+  line-height: 48px;
+}
+.form-login__button {
+  font-size: 20px;
+  width: 364px;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #0866ff;
+  transition: background-color 0.3s ease;
+}
+.form-login__button::before{
+  content: "";
+  display: inline-block;
+  height: 20px;
+  vertical-align: middle;
+}
+.form-login__button:hover {
+  background-color: #1877f2;
+}
+
+.form-content-forget-link {
+  text-align: center;
+  margin: 16px 0 0;
+}
+.form-forget-link__a {
+  font-size: 14px;
+  color: #0866ff;
+}
+.form-forget-link__a:hover {
+  text-decoration: underline;
+}
+
+.form-line {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 16px;
+  border-bottom: 1px solid #dadde1;
+}
+
+.form-content-create-account {
+  padding: 6px 0 0;
+}
+.form-create-account__a {
+  font-size: 17px;
+  background-color: #42b72a;
+  transition: background-color 0.3s ease;
+}
+.form-create-account__a:hover {
+  background-color: #379e22;
+}
+
+.section2-create-page-container {
+  margin: 28px auto 0;
+}
+.create-page__p {
+  font-size: 14px;
+  text-align: center;
+}
+.enlace__page__p--strong {
+  color: #222121;
+  font-weight: bold;
+  font-size: 14px;
+}
+.enlace__page__p--strong:hover {
+  text-decoration: underline;
+}
+/* End Section2 */
+/* Start footer */
+.footer{
+  background-color: #fff;
+}
+.footer-sections{
+  /* flex: 1 0 0px; */
+  color: #8a8d91;
+  padding-top: 20px;
+}
+.footer-languages{
+  padding-top: 10px;
+}
+.footer-languages__ul{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-languages__a{
+  color: inherit;
+}
+.footer-more-languages{
+  display: inline-block;
+  text-align: center;
+  padding-inline: 8px;
+  line-height: 18px;
+  border-radius: 2px;
+  background-color: #f5f6f7;
+  border: 1px solid #ccd0d5;
+  transition: background-color .3s ease;
+}
+.footer-languages__a:not(.selected):hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.selected {
+  cursor: text;
+  color: #737373;
+}
+.footer-more-languages__img{
+  vertical-align: middle;
+}
+.footer-more-languages:hover{
+  background-color: #ebecec;
+}
+
+.footer-line{
+  border-bottom: 1px solid #dddfe2;
+  height: 8px;
+  margin-bottom: 8px;
+}
+
+.footer-facebook-sites__ul{
+  line-height: 1.6;
+  margin-left: -16px;
+}
+.footer-facebook-sites__li{
+  display: inline-block;
+  padding-left: 16px;
+  white-space: nowrap;
+}
+.footer-facebook-sites__a{
+  color: inherit;
+}
+.footer-facebook-sites__a:hover{
+  text-decoration: underline;
+}
+.footer-adchoices_icon{
+  vertical-align: text-top;
+  margin-left: -2px;
+  transform: rotateX(180deg);
+}
+
+.footer-copyright{
+  margin-block: 20px;
+}
+.footer-copyright__h1{
+  font-size: 11px;
+  color: #737373;
+}
+/* Responsive */
+@media only screen and (max-width: 1075px) {
+  .middle{
+    margin: 0 40px;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .main{
+    min-height: 640px;
+    padding: 20px 0 80px;
+  }
+  .middle-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 40px;
+    width: auto;
+  }
+  .section1 {
+    padding-right: 0;
+    text-align: center;
+    flex: 1 0 0px;
+  }
+  .accounts{
+    justify-content: center;
+    width: 534px;
+  }
+  .contenedor__form {
+    margin: 4px 0 0;
+  }
+  .section2{
+    height: 456px;
+  }
+  .section2-form-container{
+    margin-top: 0;
+  }
+}

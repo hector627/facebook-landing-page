@@ -4,72 +4,231 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landig page de Facebook</title>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
   <main class="main">
-    <section class="section1">
-      <div class="logo">
-      </div>
-      <div class="title">
-        <h2 class="title__h2">Inicios de sesión recientes</h2>
-        <p class="title__p">Haz clic en tu foto o agrega una cuenta.</p>
-      </div>
-      <div class="accounts">
-        <div class="content-account">
-          <a href="#" class="account account-1" title="Nombre de usuario">
-            <div class="account-content-top">
-              <img src="" class="account-top__img--with-image" alt="Imagen de 'nombre de usuario'">
-            </div>
-            <div class="account-content-bottom">
-              <h4 class="account-bottom__h4">Nombre de usuario</h4>
-            </div>
-          </a>
-          <a href="#" class="account-button-delete" title="Eliminar la cuenta de esta página"></a>
-          <span class="account__span--notificacions" title="10 notificaciones nuevas">10</span>
+    <div class="middle-main middle">
+      <section class="section1">
+        <div class="logo">
+          <img src="img/logo_facebook.svg" class="logo__img" alt="logo de Facebook">
         </div>
-        <div class="content-account">
-          <a href="#" class="account account-2">
-            <div class="account-content-top">
-              <i class="account-top-with-no-image"></i>
-            </div>
-            <div class="account-content-bottom">
-              <h4 class="account-bottom__h4 account-bottom__h4--add">Agregar cuenta</h4>
-            </div>
-          </a>
+        <div class="title">
+          <h2 class="title__h2">Inicios de sesión recientes</h2>
+          <p class="title__p">Haz clic en tu foto o agrega una cuenta.</p>
         </div>
-      </div>
-    </section>
-    <section class="section2">
-      <div class="section2-form-container">
-        <form action="#" class="form">
-          <div class="form-content-inputs">
-            <div class="form-content-input">
-              <input type="text" placeholder="Correo electrónico o número de teléfono" class="form__input">
+        <div class="accounts">
+          <div class="content-account">
+            <a href="#" class="account account-1" title="Juliana Fndz">
+              <div class="account-content-top">
+                <img src="img/perfil.jpg" class="account-top__img--with-image" alt="Imagen de 'Juliana'">
+              </div>
+              <div class="account-content-bottom">
+                <h4 class="account-bottom__h4">Juliana</h4>
+              </div>
+            </a>
+            <a href="#" class="account-button-delete" title="Eliminar la cuenta de esta página"></a>
+            <span class="account__span--notificacions" title="10 notificaciones nuevas">10</span>
+          </div>
+          <div class="content-account">
+            <a href="#" class="account account-2">
+              <div class="account-content-top">
+                <i class="account-top-with-no-image"></i>
+              </div>
+              <div class="account-content-bottom">
+                <h4 class="account-bottom__h4 account-bottom__h4--add">Agregar cuenta</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section2">
+        <div class="section2-form-container">
+          <form action="#" class="form">
+            <div>
+              <div class="form-input-container">
+                <div class="form-content-input">
+                  <input type="text" placeholder="Correo electrónico o número de teléfono" class="form__input">
+                </div>
+              </div>
+              <div class="form-input-container">
+                <div class="form-content-input">
+                  <input type="password" placeholder="Contraseña" class="form__input">
+                </div>
+              </div>
             </div>
-            <div class="form-content-input">
-              <input type="password" placeholder="Contraseña" class="form__input">
+            <div class="form-content-login-button">
+              <button class="form-login__button buttons-landing-page">Iniciar sesión</button>
             </div>
-          </div>
-          <div class="form-content-login-button">
-            <button class="form-login__button buttons-landing-page">Iniciar sesión</button>
-          </div>
-          <div class="form-content-forget-link">
-            <a href="#" class="form-forget-link__a">¿Olvidaste tu contraseña?</a>
-          </div>
-          <div class="form-line">
-          </div>
-          <div class="form-content-create-account">
-            <a href="#" class="form-create-account__a buttons-landing-page">Crea cuenta nueva</a>
-          </div>
-        </form>
-      </div>
-      <div class="section2-create-page-container">
-        <p class="create-page__p">
-          <a href="#" class="enlace__page__p--strong">Crea una página </a>
-          para una celebridad, una marca o un negocio.
-        </p>
-      </div>
-    </section>
+            <div class="form-content-forget-link">
+              <a href="#" class="form-forget-link__a">¿Olvidaste tu contraseña?</a>
+            </div>
+            <div class="form-line">
+            </div>
+            <div class="form-content-create-account">
+              <a href="#" class="form-create-account__a buttons-landing-page">Crear cuenta nueva</a>
+            </div>
+          </form>
+        </div>
+        <div class="section2-create-page-container">
+          <p class="create-page__p">
+            <a href="#" class="enlace__page__p--strong">Crea una página</a>
+            para una celebridad, una marca o un negocio.
+          </p>
+        </div>
+      </section>
+    </div>
   </main>
+  <footer class="footer">
+    <div class="footer-sections"> 
+      <div class="middle">
+        <section class="footer-languages">
+          <ul class="footer-languages__ul">
+            <li>
+              <a class="footer-languages__a selected">Español</a>
+            </li>
+            <li>
+              <a href="#" class="footer-languages__a" title="English (US)">English (US)</a>
+            </li>
+            <li>
+              <a href="#" class="footer-languages__a" title="French (France)">Français (France)</a>
+            </li>
+            <li>
+              <a href="#" class="footer-languages__a" title="Portuguse (Brasil)">Português (Brasil)</a>
+            </li>
+            <li>
+              <a href="#" class="footer-languages__a" title="Italian">Italiano</a>
+            </li>
+            <li>
+              <a href="#" class="footer-languages__a" title="German">Deutsch</a>
+            </li>
+            <li>
+              <a href="#" class="footer-languages__a" title="Arabic">العربية</a>
+            </li>
+            <li>
+              <a href="#" class="footer-languages__a" title="Hindi">हिन्दी</a>
+            </li>
+            <li>
+              <a href="#" class="footer-languages__a" title="Simplified Chinese (China)">中文(简体)</a>
+            </li>
+            <li>
+              <a href="#" class="footer-languages__a" title="Japanese">日本語</a>
+            </li>
+            <li>
+              <a href="#" class="footer-languages__a footer-more-languages" title="Mostrar más idiomas">
+                <img src="img/plus_icon_languages.svg" class="footer-more-languages__img">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <div class="footer-line"></div>
+        <section class="footer-facebook-sites">
+          <ul class="footer-facebook-sites__ul">
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Regístrate en Facebook">Registrarte</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Iniciar sesión en Facebook">Iniciar sesión</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Descubre Messenger.">Messenger</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Facebook Lite para Android.">Facebook Lite</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Explorar en Video">Video</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Descubre lugares populares en Facebook.">Lugares</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Descubre juegos en Facebook.">Juegos</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Compra y vende artículos en Facebook Marketplace.">Marketplace</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Más información sobre Meta Pay">Meta Play</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Echa un vistazo a Meta">Meta Store</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Más información sobre Meta Quest">Meta Quest</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Learn more about Meta Ray-Ban">Meta Ray-Ban</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Meta AI">Meta AI</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Descubre Instagram.">Instagram</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Echa un vistazo a Threads">Threads</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Haz una donación a causas que te importan.">Recaudaciones de fondos</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Explora nuestro directorio de servicios de Facebook.">Servicios</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Mira el Centro de información de votación.">Centro de información de votación</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Obtén información sobre cómo recopilamos, usamos y compartimos datos para ayudar a Facebook.">Política de privacidad</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Descubre cómo administrar y controlar tu privacidad en Facebook.">Centro de privacidad</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Explora nuestros grupos.">Grupos</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Lee nuestro blog, descubre el centro de recursos y encuentra ofertas de trabajo.">información</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Anúnciate en Facebook.">Crear anuncio</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Crear una página">Crear página</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Desarrolla en nuestra plataforma.">Desarrolladores</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Únete a nuestra extraordinaria empresa.">Empleo</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Infórmate acerca de las cookies y Facebook.">Cookies</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Conoce las opciones de anuncios.">
+                Opciones de anuncios
+                <img src="img/adchoices_icon.svg" class="footer-adchoices_icon">
+              </a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Consulta nuestras políticas y condiciones.">Condiciones</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Visita nuestro servicio de ayuda.">Ayuda</a>
+            </li>
+            <li class="footer-facebook-sites__li">
+              <a href="#" class="footer-facebook-sites__a" title="Ve nuestro aviso sobre importación de contactos y no usuarios.">Importación de contactos y no usuarios</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-copyright">
+          <span class="footer-copyright__h1">Meta © 2024</span>
+          <!-- <div>
+          </div> -->
+        </section>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
